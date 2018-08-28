@@ -1,23 +1,26 @@
 function fetchBooks() {
   console.log("== fetchBooks ==")
 
-//  fetch ('https://anapioficeandfire.com/api/books')
-//    .then(resp => resp.json())
-//    .then(json => console.log(json));
+  fetch ('https://anapioficeandfire.com/api/books')
+    .then(resp => resp.json())
+    .then(json => {
+      console.log(json);
+      renderBooks(json);
+    });
   //write fetch request to the Game of Thrones API
 }
 
-fetch ('https://anapioficeandfire.com/api/books')
-  .then(function(response) {
-    console.log("-- books response --");
-    console.log("response:", response);
-    return response.json();
-  })
-  .then(function(json) {
-    console.log("== then #2 ==");
-    console.log("json:", json);
-    renderBooks(json);
-  })
+//fetch ('https://anapioficeandfire.com/api/books')
+//  .then(function(response) {
+//    console.log("-- books response --");
+//    console.log("response:", response);
+//    return response.json();
+//  })
+//  .then(function(json) {
+//    console.log("== then #2 ==");
+//    console.log("json:", json);
+//    renderBooks(json);
+//  })
 
 
 
