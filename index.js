@@ -7,17 +7,17 @@ function fetchBooks() {
   //write fetch request to the Game of Thrones API
 }
 
-fetch ('https://anapioficeandfire.com/api/books')
-  .then(function(response) {
-    console.log("-- books response --");
-    console.log("response:", response);
-    return response.json();
-  })
-  .then(function(json) {
-    console.log("== then #2 ==");
-    console.log("json:", json);
-    renderBooks(json);
-  })
+//fetch ('https://anapioficeandfire.com/api/books')
+//  .then(function(response) {
+  //  console.log("-- books response --");
+  //  console.log("response:", response);
+  //  return response.json();
+//  })
+//  .then(function(json) {
+//    console.log("== then #2 ==");
+//    console.log("json:", json);
+//    renderBooks(json);
+//  })
 
 
 function renderBooks(json) {
