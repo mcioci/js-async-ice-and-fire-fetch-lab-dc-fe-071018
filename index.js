@@ -12,6 +12,12 @@ fetch ('https://anapioficeandfire.com/api/books')
     console.log("-- books response --");
     console.log("response:", response);
     return response.json();
+  })
+  .then(function(json) {
+    console.log("== then #2 ==");
+    console.log("json:", json);
+    renderBooks(json);
+  })
   
 
 function renderBooks(json) {
